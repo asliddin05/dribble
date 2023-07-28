@@ -1,0 +1,211 @@
+// content
+
+.content {
+    padding-block: 32px 40px;
+}
+
+.content__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.content__btn_block {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0px 0px 0px 1px #E7E7E9 inset;
+    padding: 10px 15px;
+}
+
+.content__btn_title {
+    color: #6E6D7A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.content__btn {
+    width: 10px;
+    height: 10px;
+    background-image: url(../../img/Chevron.svg);
+    margin-left: 25px;
+}
+
+.content__filter {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 16px;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0px 0px 0px 1px #E7E7E9 inset;
+    color: #0D0C22;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &:before {
+        content: "";
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        background-image: url(../../img/Frame1.svg);
+        margin-right: 8px;
+    }
+}
+
+.content__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 36px;
+    margin-bottom: 59px;
+}
+
+.content__item {
+    max-width: 297px;
+}
+
+.content__img_block {
+    margin-bottom: 10px;
+}
+
+.content__name_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.content__name_title {
+    display: flex;
+    align-items: center;
+    color: #0D0C22;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    &:before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 8px;
+        background-image: url(../../img/Image.png);
+    }
+
+    &:after {
+        content: "PRO";
+        width: 28px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+        border-radius: 3px;
+        background: #CCC;
+        color: #FFF;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 10px;
+        text-transform: uppercase;
+    }
+}
+
+.content__like {
+    display: flex;
+    align-items: center;
+    color: #3D3D4E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+    &:before {
+        content: "";
+        width: 14px;
+        height: 12px;
+        display: inline-block;
+        background-image: url(../../img/like.svg);
+        background-position: center;
+        margin-right: 4px;
+        flex-shrink: 0;
+    }
+}
+
+.content__view {
+    display: flex;
+    align-items: center;
+    color: #3D3D4E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+    &:before {
+        content: "";
+        width: 14px;
+        height: 12px;
+        display: inline-block;
+        background-image: url(../../img/view.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 4px;
+        margin-bottom: 2px;
+        flex-shrink: 0;
+    }
+}
+
+.content__sign_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 63px;
+}
+
+.content__sign_up {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 245px;
+    padding: 10px 60px;
+    border-radius: 8px;
+    background-color: #EA4C89;
+}
+
+.content__btn_sign_in {
+    color: #EA4C89;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 1330px) {
+    .content__list {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .content__list {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .content__list {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 414px) {
+    .content__sign_block {
+        flex-direction: column;
+        gap: 34px;
+    }
+}

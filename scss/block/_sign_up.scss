@@ -1,0 +1,40 @@
+.sign_up {
+    padding: 16px;
+    background-color: #0D0C22;
+}
+.sign_up__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../../img/Frame.svg);
+        position: absolute;
+        right: 0;
+    }
+}
+
+.sign_up__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.9px;
+}
+
+.sign_up__title_span {
+    color: #EA4C89;
+}
+@media screen and (max-width: 900px) {
+    .sign_up__title {
+        font-size: 11px;
+    }
+    .sign_up__container:after {
+        display: none;
+    }
+}
